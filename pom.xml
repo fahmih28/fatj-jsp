@@ -8,11 +8,11 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>org.rabbani</groupId>
-  <artifactId>fat-jsp</artifactId>
+  <artifactId>fatj-jsp</artifactId>
   <version>1.0-RELEASE</version>
   <packaging>jar</packaging>
 
-  <name>fat-jsp</name>
+  <name>fatj-jsp</name>
   <url>http://maven.apache.org</url>
   <developers>
       <developer>

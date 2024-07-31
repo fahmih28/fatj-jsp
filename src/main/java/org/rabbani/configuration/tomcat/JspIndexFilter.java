@@ -8,7 +8,7 @@ public class JspIndexFilter implements Filter {
 
     private FilterConfig filterConfig;
 
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
         this.filterConfig = filterConfig;
     }
 
