@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.rabbani.configuration.JspConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=io.github.fahmih28.configuration.JspConfiguration

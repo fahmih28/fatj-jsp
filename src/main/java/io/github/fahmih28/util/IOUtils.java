@@ -1,4 +1,4 @@
-package org.rabbani.util;
+package io.github.fahmih28.util;
 
 import java.io.IOException;
 import java.io.InputStream;

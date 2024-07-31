@@ -1,4 +1,4 @@
-package org.rabbani.configuration.tomcat;
+package io.github.fahmih28.configuration.tomcat;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

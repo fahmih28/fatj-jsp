@@ -1,8 +1,8 @@
-package org.rabbani.configuration;
+package io.github.fahmih28.configuration;
 
-import org.rabbani.configuration.properties.WebResourcesProperties;
-import org.rabbani.configuration.tomcat.JspIndexFilter;
-import org.rabbani.configuration.tomcat.ResourceLoaderResourceSet;
+import io.github.fahmih28.configuration.properties.WebResourcesProperties;
+import io.github.fahmih28.configuration.tomcat.JspIndexFilter;
+import io.github.fahmih28.configuration.tomcat.ResourceLoaderResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

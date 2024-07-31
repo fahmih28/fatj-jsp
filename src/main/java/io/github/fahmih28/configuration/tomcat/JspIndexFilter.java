@@ -1,9 +1,12 @@
-package org.rabbani.configuration.tomcat;
+package io.github.fahmih28.configuration.tomcat;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
+/**
+ * this filter is used by tomcat server to redirect request using directory name to the file index.jsp/jspx resides in it
+ */
 public class JspIndexFilter implements Filter {
 
     private FilterConfig filterConfig;

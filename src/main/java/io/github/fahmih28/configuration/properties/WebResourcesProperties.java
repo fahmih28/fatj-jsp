@@ -1,4 +1,4 @@
-package org.rabbani.configuration.properties;
+package io.github.fahmih28.configuration.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
