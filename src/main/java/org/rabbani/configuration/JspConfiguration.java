@@ -4,9 +4,11 @@ import org.rabbani.configuration.properties.WebResourcesProperties;
 import org.rabbani.configuration.tomcat.JspIndexFilter;
 import org.rabbani.configuration.tomcat.ResourceLoaderResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.embedded.tomcat.TomcatContextCustomizer;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +20,7 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 @Configuration
+@ConditionalOnBean(TomcatServletWebServerFactory.class)
 @EnableConfigurationProperties(WebResourcesProperties.class)
 public class JspConfiguration {
 

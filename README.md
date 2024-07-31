@@ -2,8 +2,8 @@
 springboot's autoconfiguration library for enabling a fat/uber jar app to serve jsp
 
 ## Usage
-- import this library in your pom file
-- its required to include, the dependency below in your pom.xml, this library uses spring boot parent version 2.7.18
+- add this lib in your dependency 
+- its required to include, the dependency below in your pom.xml, this library uses spring boot parent version 2.7.18.
   ```xml
      <dependencies>
         ....
