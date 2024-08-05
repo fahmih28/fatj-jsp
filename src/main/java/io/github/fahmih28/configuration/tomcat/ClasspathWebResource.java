@@ -11,7 +11,7 @@ import java.net.URL;
 import java.security.cert.Certificate;
 import java.util.jar.Manifest;
 
-public class ResourceWebResource implements WebResource {
+public class ClasspathWebResource implements WebResource {
 
     private final Resource resource;
     private final long timestamp;
@@ -19,7 +19,7 @@ public class ResourceWebResource implements WebResource {
     private final WebResourceRoot root;
     private String mimeType;
 
-    public ResourceWebResource(Resource resource, long timestamp, String path, WebResourceRoot root) {
+    public ClasspathWebResource(Resource resource, long timestamp, String path, WebResourceRoot root) {
         this.resource = resource;
         this.timestamp = timestamp;
         this.path = path;
@@ -48,12 +48,12 @@ public class ResourceWebResource implements WebResource {
 
     @Override
     public boolean isDirectory() {
-        return !resource.isFile();
+        return !resource.isReadable();
     }
 
     @Override
     public boolean isFile() {
-        return resource.isFile();
+        return resource.isReadable();
     }
 
     @Override
