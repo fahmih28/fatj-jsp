@@ -11,9 +11,9 @@ public class WebResourcesProperties {
     public static class Jsp{
         private String location;
         private boolean mapIndex;
+        private boolean restrictDirectAccess;
     }
 
     private Jsp jsp;
-
 
 }
